@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,user-scalable=no"/>
+		<title>锤子手机3D效果</title>
+		<script>
+		(function(){
+			var html = document.documentElement;
+			var hWidth = html.getBoundingClientRect().width;
+			console.log(hWidth);
+			html.style.fontSize = hWidth/15 + "px";
+		})();
+		</script>
+		<link rel="stylesheet" href="../../css/3d.css"/>
+
+		<style id="css">
+			.box{
+				width:100px;
+				height:100px;
+				
+				margin:200px auto;
+				perspective:800px;
+				-webkit-perspective:800px;
+			}
+
+			.div{
+				width:100px;
+				height:100px;
+				position:relative;
+				transform-style:preserve-3d;
+				transition: 3s;
+				transform-origin:center center -154px;
+			}
+
+			.box:hover .div{
+				transform: rotateX(360deg);
+			}
+
+			.div div{
+				position:absolute;
+				left:0;
+				top:100px;
+				transform-style:preserve-3d;
+				transform-origin:top;
+				transform: rotateX(-36deg);
+			}
+
+			.div > div{
+				top:0;
+				transform: rotateX(-0deg);
+			}
+
+			.div span{
+				width:98px;
+				height: 98px;
+				border:1px solid #000;
+				background: #ccc;
+				text-align: center;
+				font-size: 50px;
+				line-height: 98px;
+				display: block;
+			}
+		</style>
+
+		<script>
+
+		window.onload = function(){
+			setLayout();
+		}
+
+		function setLayout(){
+			var div = document.querySelector(".div");
+			var str = "";
+			//"<div><span></span>"+str+"</div>"  "<div><span>2</span></div>";
+
+			for(var i = 0; i< 10; i++){
+				str = "<div><span>"+(9-i)+"</span>"+str+"</div>";
+			}
+
+			div.innerHTML = str;
+		}
+		</script>
+</head>
+<body>
+
+	<div class="box">
+		<div class="div">
+			
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

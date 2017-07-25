@@ -1,0 +1,261 @@
+/*! Vendor*/
+/*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
+a {
+  background: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+/*! Helpers*/
+/*! Layout*/
+html {
+  font-size: 100px;
+}
+
+html, body {
+  font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul, dl, li, dt, dd, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  max-width: 11rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*! Components*/
+#header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  margin-top: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+#header .logo {
+  width: 1.03rem;
+  height: 0.73rem;
+  background: url("../images/yujia/logo.png") no-repeat;
+  text-indent: -10rem;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+#header .header_r {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#header .header_r .nav {
+  width: 60%;
+  margin-right: 8%;
+}
+#header .header_r .nav ul {
+  display: flex;
+  height: 0.73rem;
+  width: 100%;
+  justify-content: space-between;
+}
+#header .header_r .nav ul li {
+  line-height: 0.73rem;
+  font-size: 0.14rem;
+  text-transform: uppercase;
+}
+#header .header_r .nav ul li a {
+  color: #ffffff;
+}
+#header .header_r > a {
+  display: block;
+  width: 0.7rem;
+  height: 0.28rem;
+  background: #e74f58;
+  color: #fff;
+  border-radius: 28%;
+  font-size: 0.14rem;
+  text-align: center;
+  line-height: 0.28rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#banner {
+  background: url("../images/yujia/banner.jpg") no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+}
+#banner .bannerCont {
+  padding-top: 36%;
+  padding-bottom: 35%;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+#banner .bannerCont h2 {
+  font-size: 0.68rem;
+  color: #ffffff;
+}
+#banner .bannerCont h3 {
+  font-size: 0.48rem;
+  color: #ffffff;
+  margin-top: 0.1rem;
+}
+#banner .bannerCont a {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.24rem;
+  width: 2rem;
+  height: 0.52rem;
+  line-height: 0.52rem;
+  color: #fff;
+  background: #e74f58;
+  border-radius: 0.15rem;
+  text-align: center;
+}
+
+.sports .sports_bg {
+  width: 100%;
+  text-align: center;
+}
+.sports .sports_des {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  top: 50%;
+  -webkit-transform: translate(0, -80%);
+  transform: translate(0, -80%);
+}
+.sports .sports_des p {
+  width: 100%;
+  text-align: center;
+}
+.sports .sports_des p:nth-of-type(1) {
+  font-size: 0.5rem;
+  color: #313131;
+  text-transform: uppercase;
+}
+.sports .sports_des p:nth-of-type(2) {
+  font-size: 0.15rem;
+  color: #313131;
+  margin-top: 0.2rem;
+}
+
+.abouts {
+  width: 100%;
+  display: flex;
+}
+.abouts .abouts_l {
+  width: 50%;
+}
+.abouts .abouts_l img {
+  display: block;
+  width: 100%;
+}
+.abouts .abouts_r {
+  width: 50%;
+  position: relative;
+}
+.abouts .abouts_r .abouts_r_cont {
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.abouts .abouts_r .abouts_r_cont p:nth-of-type(1) {
+  font-size: 0.35rem;
+  color: #313131;
+}
+.abouts .abouts_r .abouts_r_cont p:nth-of-type(2) {
+  font-size: 0.2rem;
+  color: #313131;
+  margin-top: 0.1rem;
+}
+.abouts .abouts_r .abouts_r_cont p:nth-of-type(3) {
+  font-size: 0.15rem;
+  color: #313131;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  line-height: 0.24rem;
+  justify-content: space-between;
+  text-align: justify;
+}
+.abouts .abouts_r .abouts_r_cont > a {
+  text-transform: uppercase;
+  width: 2.07rem;
+  height: 0.52rem;
+  border-radius: 0.18rem;
+  color: #fff;
+  background-color: #e74f58;
+  display: block;
+  font-size: 0.2rem;
+  text-align: center;
+  line-height: 0.52rem;
+}

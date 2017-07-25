@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,user-scalable=no"/>
+		<title>商城</title>
+		<script>
+		(function(){
+			var html = document.documentElement;
+			var hWidth = html.getBoundingClientRect().width;
+			console.log(hWidth);
+			html.style.fontSize = hWidth/15 + "px";
+		})();
+		</script>
+		<link rel="stylesheet" href="../../css/tb.css"/>
+	</head>
+	<body>
+		<header id="header">
+
+		</header>
+
+		<nav id="nav"></nav>
+
+		<section id="search"></section>
+
+		<section class="content">
+
+			<div class="main">
+				<div class="clear">
+					<div class="section fl"></div>
+					<div class="options fr"></div>
+				</div>
+			<div class="side">
+				<div class="side_section"></div>
+				<div class="side_ad"></div>
+				<div class="side_ad"></div>
+				<div class="side_section"></div>
+				<div class="side_section"></div>
+			</div>
+		</section>
+
+		<footer id="footer"></footer>
+	</body>
+</html>

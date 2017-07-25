@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,user-scalable=no"/>
+		<title>3D盒子</title>
+		<script>
+		(function(){
+			var html = document.documentElement;
+			var hWidth = html.getBoundingClientRect().width;
+			console.log(hWidth);
+			html.style.fontSize = hWidth/15 + "px";
+		})();
+		</script>
+		<link rel="stylesheet" href="../../css/3d.css"/>
+
+		<style id="css">
+			body{
+				background: #404040;
+				margin:0;
+			}
+
+			body,html{
+				height: 100%;
+				overflow: hidden;
+				position: relative;
+			}
+
+			#wrap{
+				height: 100%;
+				perspective:320px;
+				-webkit-perspective:320px;
+
+			}
+
+			#box{
+				width:200px;
+				height: 100px;
+				position: absolute;
+				top:100px;
+				left:50%;
+				top:50%;
+				margin:-60px 0 0 -100px;
+				transform: rotateY(0deg);
+				transform-style: preserve-3d;
+				transition:3s;
+			}
+
+			#box div{
+				position: absolute;
+				left:0;
+				top:0;
+				width: 198px;
+				height: 98px;
+				border:1px solid #fff;
+
+				background: rgba(255,255,255,.3);
+				font-size: 30px;
+				text-align: center;
+				color:#444;
+				line-height: 100px;
+				backface-visibility:hidden;
+			}
+
+			#box div:nth-of-type(1){
+				-webkit-transform:rotateY(0deg);
+			}
+
+			#box div:nth-of-type(2){
+				-webkit-transform:rotateY(180deg);
+			}
+		
+		</style>
+
+		<script>
+			window.onload = function(){
+				var box = document.querySelector("#box");
+				box.addEventListener("touchend",function(){
+
+					box.style.WebkitTransform = box.style.transform = "rotateY(180deg)";
+				},false)
+			}
+		</script>
+</head>
+<body>
+	<h2 style="font-size:0.5rem; text-align:center;">卡片式登录框切换</h2>
+	<div id="wrap">
+		<div id="box">
+			<div>正面</div>
+			<div>背面</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+.sports{
+	.sports_bg{
+		width:100%;
+		text-align: center;
+		img{}
+	}
+
+	.sports_des{
+		width:100%;
+		position:absolute;
+		display:flex;
+		text-align:center;
+		flex-direction:column;
+		top:50%;
+		-webkit-transform:translate(0,-80%);
+		transform:translate(0,-80%);
+		p{
+			width:100%;
+			text-align: center;
+
+			&:nth-of-type(1){
+				font-size:0.5rem;
+				color:#313131;
+				text-transform:uppercase;
+			}
+
+			&:nth-of-type(2){
+				font-size:0.15rem;
+				color:#313131;
+				margin-top:0.2rem;
+			}
+		}
+		
+	}
+}

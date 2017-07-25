@@ -1,0 +1,30 @@
+/*! Vendor*/
+@import 
+	"compass"
+,	"susy"
+,	"breakpoint"
+,	"normalize-version"
+,   "normalize/base"
+,	"normalize/links"
+, 	"normalize/html5"
+;
+
+/*! Helpers*/
+@import
+	"helpers/yj-variables"
+;
+
+/*! Layout*/
+@import 
+	"layout/yujiamain"
+;
+
+
+/*! Components*/
+@import 
+	"components/yj-header",
+	"components/yj-banner",
+	"components/yj-sports",
+	"components/yj-abouts"
+
+;

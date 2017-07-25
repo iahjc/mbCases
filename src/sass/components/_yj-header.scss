@@ -1,0 +1,61 @@
+#header{
+	width:100%;
+	position:absolute;
+	top:0;
+	margin-top:0.25rem;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	z-index:10;
+	.logo{
+		width:1.03rem;
+		height:0.73rem;
+		background:url('../images/yujia/logo.png') no-repeat;
+		text-indent:-10rem;
+		padding:0;
+		margin:0;
+		font-size: 0;
+		
+	}
+	
+	.header_r{
+		width:70%;
+		display: flex;
+		align-items:center;
+		justify-content:flex-end;
+		.nav{
+			width:60%;
+			margin-right:8%;
+			ul{
+				display: flex;
+				height:0.73rem;
+				width:100%;
+				justify-content:space-between;
+				li{
+					line-height: 0.73rem;
+					font-size:0.14rem;
+					text-transform:uppercase;
+					a{
+						color:$navColor;
+					}
+				}
+			}
+		}
+
+		> a{
+			display: block;
+			width:0.7rem;
+			height:0.28rem;
+			background:#e74f58;
+			color:#fff;
+			border-radius:28%;
+			font-size:0.14rem;
+			text-align: center;
+			line-height:0.28rem;
+			text-transform:uppercase;
+			cursor:pointer; 
+		}
+	}
+
+	
+}
